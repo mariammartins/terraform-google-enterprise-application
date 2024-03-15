@@ -22,10 +22,10 @@ import (
 	"github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test/pkg/tft"
 	"github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test/pkg/utils"
 	"github.com/stretchr/testify/assert"
-	// "github.com/GoogleCloudPlatform/terraform-google-enterprise-application/test/integration/testutils"
 	"github.com/tidwall/gjson"
 )
 
+// getResultFieldStrSlice parses a field of a results list into a string slice
 func GetResultFieldStrSlice(rs []gjson.Result, field string) []string {
 	s := make([]string, 0)
 	for _, r := range rs {
